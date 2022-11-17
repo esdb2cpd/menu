@@ -36,10 +36,13 @@ body, html{
 }
 .menu>*{
     opacity: 0%;
-    transition: opacity 2s;
+    transition: .8s;
+    transform: translateX(-500%);
 }
-.menu:hover>*{
+.menu-visible>*{
     opacity: 100%;
+    transform: translateX(0%);
+
 }
 
 
