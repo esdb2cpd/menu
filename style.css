@@ -12,12 +12,16 @@ body, html{
     display: flex;
     align-items: center;
     padding: 3vh;
+    position: fixed;
+    width: 100%;
 }
 .main{
+  
     display: flex;
     justify-content: center;
 }
 .content{
+    margin-top: 20vh;
     width: 50%;
 
 }
