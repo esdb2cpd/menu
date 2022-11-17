@@ -16,7 +16,7 @@ body, html{
     width: 100%;
 }
 .menu{
-    width: 36vw;
+    width: 0;
     height: 92vh;
     background-color: coral;
     position: fixed;
@@ -26,7 +26,23 @@ body, html{
     flex-direction: column;
     justify-content: center ;
     align-items: center;
+    transition: width .5s;
+    white-space: nowrap;
+
+ 
 }
+.menu-visible{
+    width: 36vw;
+}
+.menu>*{
+    opacity: 0%;
+    transition: opacity 2s;
+}
+.menu:hover>*{
+    opacity: 100%;
+}
+
+
 .lien{
     color: white;
     font-size: 2em;
@@ -64,4 +80,16 @@ body, html{
     background-color: white;
     border-radius: 10%;
 
+}
+
+.trucbleu{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    transition: 1s;
+}
+
+.plusgrand{
+    height: 200px;
+    width: 200px;
 }
