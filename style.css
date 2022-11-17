@@ -1,0 +1,44 @@
+
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar{
+    margin: 0;
+    background-color: coral;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    padding: 3vh;
+}
+.main{
+    display: flex;
+    justify-content: center;
+}
+.content{
+    width: 50%;
+
+}
+.burger{
+    height: 50px;
+    width: 50px;
+    border : solid 5px white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10%;
+}
+.burger:hover{
+    cursor: pointer;
+}
+.rectangle{
+    height: .5%;
+    width: 55%;
+    border : solid 2px white;
+    background-color: white;
+    border-radius: 10%;
+
+}
