@@ -8,6 +8,7 @@ const burger = document.querySelector(".burger")
 const menu = document.querySelector(".menu")
 
 const boutonPresentation1 = document.querySelector("#presentation1")
+const boutonPresentation2 = document.querySelector("#presentation2")
 
 const pagePresentation1 = document.querySelector('.presentation1')
 const pagePresentation2 = document.querySelector('.presentation2')
@@ -31,9 +32,17 @@ burger.addEventListener("click", ()=>{
 
 boutonPresentation1.addEventListener("click", ()=>{
 
+            /* cacherTout()
          pagePresentation1.classList.remove('hidden')  
-         menu.classList.remove("menu-visible") 
+         menu.classList.remove("menu-visible") */ 
 
+         afficher()
+
+})
+boutonPresentation2.addEventListener("click",()=>{
+    cacherTout()
+    pagePresentation2.classList.remove('hidden')
+    menu.classList.remove('menu-visible')
 })
 
 
@@ -45,5 +54,18 @@ function cacherTout(){
             // ajouter la classe 'hidden' à chaque page
    // boucles forEach
 
+   toutesLesPages.forEach(page=>{
+        page.classList.add('hidden')
+
+   })
+
 }
 
+
+function afficher(){
+
+    //à completer
+    classList.remove('hidden')  
+    menu.classList.remove("menu-visible") 
+
+}
