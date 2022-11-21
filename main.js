@@ -10,6 +10,9 @@ const menu = document.querySelector(".menu")
 const boutonPresentation1 = document.querySelector("#presentation1")
 
 const pagePresentation1 = document.querySelector('.presentation1')
+const pagePresentation2 = document.querySelector('.presentation2')
+
+const content = document.querySelector('.content')
 
 // console.log(burger)
 
@@ -34,11 +37,13 @@ boutonPresentation1.addEventListener("click", ()=>{
 })
 
 
+function cacherTout(){
 
+    let toutesLesPages = content.querySelectorAll('div')
 
-function disBonjour(){
-
-    alert('bonjour')
+    // pour chaque page de toutesLesPages
+            // ajouter la classe 'hidden' à chaque page
+   // boucles forEach
 
 }
 
