@@ -7,13 +7,17 @@ const burger = document.querySelector(".burger")
 
 const menu = document.querySelector(".menu")
 
+const content = document.querySelector('.content')
+
 const boutonPresentation1 = document.querySelector("#presentation1")
 const boutonPresentation2 = document.querySelector("#presentation2")
+const boutonContact = document.querySelector('#contact')
 
 const pagePresentation1 = document.querySelector('.presentation1')
 const pagePresentation2 = document.querySelector('.presentation2')
+const pageContact = document.querySelector('.contact')
 
-const content = document.querySelector('.content')
+
 
 // console.log(burger)
 
@@ -32,23 +36,21 @@ burger.addEventListener("click", ()=>{
 
 boutonPresentation1.addEventListener("click", ()=>{
 
-            /* cacherTout()
-         pagePresentation1.classList.remove('hidden')  
-         menu.classList.remove("menu-visible") */ 
-
-         afficher()
+         afficher(pagePresentation1)
 
 })
 boutonPresentation2.addEventListener("click",()=>{
-    cacherTout()
-    pagePresentation2.classList.remove('hidden')
-    menu.classList.remove('menu-visible')
+    afficher(pagePresentation2)
+})
+
+boutonContact.addEventListener("click", ()=>{
+    afficher(pageContact)
 })
 
 
 function cacherTout(){
 
-    let toutesLesPages = content.querySelectorAll('div')
+    let toutesLesPages = content.querySelectorAll('div.page')
 
     // pour chaque page de toutesLesPages
             // ajouter la classe 'hidden' à chaque page
@@ -62,10 +64,18 @@ function cacherTout(){
 }
 
 
-function afficher(){
+function afficher(unePage){
 
-    //à completer
-    classList.remove('hidden')  
+    cacherTout()
+   
+    unePage.classList.remove('hidden')  
     menu.classList.remove("menu-visible") 
 
 }
+
+
+
+afficher(pagePresentation1)
+
+///utiliser https://formsubmit.co/   pour faire vraiment fonctionner
+//le formulaire de contact
